@@ -3321,7 +3321,7 @@ ul.product_list_widget .amount {
   z-index: 31;
 }
 .header-layout4 .text-body2 {
-  color: #c6baba !important;
+  color: white !important;
 }
 .header-layout4 .bg-ovelay1,
 .header-layout4 .bg-ovelay2 {
@@ -14034,6 +14034,9 @@ table.woocommerce-grouped-product-list.group_table td {
     padding-top: 5px;
     vertical-align: middle;
   }
+}
+.fab, .fal {
+  color: white;
 }
 /* Small devices */
 @media (max-width: 767px) {
