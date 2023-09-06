@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Products from "./pages/Products";
+import Shop from "./pages/Shop";
 import Header from "./components/header/Header";
 import ContactUs from "./pages/ContactUs";
 
@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
+        <Route path="/shop" element={<Shop />} />
         <Route path="/contactus" element={<ContactUs />} />
       </Routes>
     </>

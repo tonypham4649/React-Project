@@ -16,18 +16,23 @@ export default function Home() {
   return (
     <>
       {/* <Preloader />; */}
-      <StickyHeader />;
-      <Header />;
-      <Hero />;
-      <Feature />;
-      <AboutUs />;
-      <TitleBox />;
-      <Services />;
-      <FeatureLatestProducts />;
-      <Testimonial />;
-      <FeatureProduct />;
-      <Faq />;
-      <Footer />;
+      <StickyHeader />
+      <Header />
+
+      <Hero />
+      <Feature />
+
+      <AboutUs />
+      <TitleBox />
+      <Services />
+      <FeatureLatestProducts />
+
+      <Testimonial />
+      <FeatureProduct />
+
+      <Faq />
+
+      <Footer />
     </>
   );
 }

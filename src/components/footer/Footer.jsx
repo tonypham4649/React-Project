@@ -2,7 +2,9 @@ export default function Footer() {
   return (
     <footer
       className="footer-wrapper footer-layout1"
-      data-bg-src="./src/assets/img/footer/footer-bg-2.jpg"
+      style={{
+        backgroundImage: "url(./src/assets/img/footer/footer-bg-2.jpg)",
+      }}
     >
       <div className="container">
         <div className="widget-area pt-100">
