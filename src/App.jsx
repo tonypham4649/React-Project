@@ -1,20 +1,22 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
-import Home from "./pages/Home";
-import Shop from "./pages/Shop";
-import Header from "./components/header/Header";
-import ContactUs from "./pages/ContactUs";
+import HeaderTop from "./components/header/HeaderTop";
+import MainHeader from "./components/header/MainHeader";
+import Footer from "./components/footer/Footer";
+import routes from "./routes";
 
 function App() {
+  const routeComponents = routes.map(({ path, element }, key) => (
+    <Route path={path} element={element} key={key} />
+  ));
+
   return (
     <>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/contactus" element={<ContactUs />} />
-      </Routes>
+      <HeaderTop />
+      <MainHeader />
+      <Routes>{routeComponents}</Routes>
+      <Footer />
     </>
   );
 }

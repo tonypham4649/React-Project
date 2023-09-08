@@ -53,7 +53,7 @@ export default function Services() {
               </div>
             </div>
           </div>
-          <div className="col-md-6 col-xl-4">
+          {/* <div className="col-md-6 col-xl-4">
             <div className="service-box1">
               <div className="sr-shape1">
                 <img
@@ -86,8 +86,8 @@ export default function Services() {
                 </a>
               </div>
             </div>
-          </div>
-          <div className="col-md-6 col-xl-4">
+          </div> */}
+          {/* <div className="col-md-6 col-xl-4">
             <div className="service-box1">
               <div className="sr-shape1">
                 <img
@@ -120,8 +120,8 @@ export default function Services() {
                 </a>
               </div>
             </div>
-          </div>
-          <div className="col-md-6 col-xl-4">
+          </div> */}
+          {/* <div className="col-md-6 col-xl-4">
             <div className="service-box1">
               <div className="sr-shape1">
                 <img
@@ -154,7 +154,7 @@ export default function Services() {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

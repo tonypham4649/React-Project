@@ -14035,9 +14035,6 @@ table.woocommerce-grouped-product-list.group_table td {
     vertical-align: middle;
   }
 }
-.fab, .fal {
-  color: white;
-}
 /* Small devices */
 @media (max-width: 767px) {
   /* rtl Support */
