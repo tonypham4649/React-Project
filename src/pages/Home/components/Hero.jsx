@@ -1,4 +1,6 @@
 export default function Hero() {
+  const data = {};
+
   return (
     <section className="vs-hero-wrapper hero-layout4 ">
       <div
@@ -23,7 +25,7 @@ export default function Hero() {
               top: "180px",
               textAlign: "center",
               fontWeight: 600,
-              fontSize: "52px",
+              fontSize: "52px", 
               letterSpacing: "0.9em",
               textTransform: "uppercase",
               color: "#000000",

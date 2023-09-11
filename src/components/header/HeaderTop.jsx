@@ -12,7 +12,7 @@ export default function HeaderTop() {
                 <li>
                   {/* <!-- Dropdown --> */}
                   <a
-                    className="dropdown-toggle"
+                    className=" "
                     href="#"
                     role="button"
                     id="dropdownMenuLink1"
