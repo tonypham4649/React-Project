@@ -13,15 +13,12 @@ export default function Home() {
     <>
       <Hero />
       <Feature />
-
       <AboutUs />
       <TitleBox />
       <Services />
       <FeatureLatestProducts />
-
       <Testimonial />
       <FeatureProduct />
-
       <Faq />
     </>
   );

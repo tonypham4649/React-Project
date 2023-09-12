@@ -1,9 +1,43 @@
+import shopItems from "/src/data/dummydata.json";
+
 export default function Services() {
+  const featureItems = shopItems.slice(0, 6).map((item) => {
+    return (
+      <div className="col-md-6 col-xl-4" key={item.id}>
+        <div className="service-box1">
+          <div className="sr-shape1">
+            <img src="./src/assets/img/shape/service-s-1-1.png" alt="Image" />
+          </div>
+          <div className="sr-shape2">
+            <img src="./src/assets/img/shape/service-s-1-2.png" alt="Image" />
+          </div>
+          <div className="service-img">
+            <img src={item.imgUrl} alt="Service Image" />
+          </div>
+          <div className="service-content">
+            <h3 className="service-title h2 fw-semibold">
+              <a href="service.html">{item.name}</a>
+            </h3>
+            <p className="service-text fs-xs mb-0">{item.description}</p>
+            <a href="shop.html" className="icon-btn">
+              <i className="fal fa-long-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    );
+  });
+
   return (
     <section className="vs-service-wrapper position-relative pt-175 space-md-bottom">
-      <div className="service-shape1 position-absolute start-0 top-0">
-        <img src="./src/assets/img/service/service-bg-1-2.png" alt="shape" />
-      </div>
+      <div
+        className="service-shape1 position-absolute start-0 top-0"
+        style={{
+          backgroundImage: "url(./src/assets/img/service/service-bg-1-2.png)",
+          backgroundSize: "cover",
+          boxShadow: "inset 0 0 0 2000px rgba(0, 0, 0, 0.363)",
+        }}
+      />
       <div className="container z-index-common">
         <div
           className="section-title text-center text-lg-start  wow fadeIn"
@@ -19,142 +53,7 @@ export default function Services() {
           data-slide-show="3"
           data-md-slide-show="2"
         >
-          <div className="col-md-6 col-xl-4">
-            <div className="service-box1">
-              <div className="sr-shape1">
-                <img
-                  src="./src/assets/img/shape/service-s-1-1.png"
-                  alt="Image"
-                />
-              </div>
-              <div className="sr-shape2">
-                <img
-                  src="./src/assets/img/shape/service-s-1-2.png"
-                  alt="Image"
-                />
-              </div>
-              <div className="service-img">
-                <img
-                  src="./src/assets/img/service/service-img-1.png"
-                  alt="Service Image"
-                />
-              </div>
-              <div className="service-content">
-                <h3 className="service-title h2 fw-semibold">
-                  <a href="service.html">Almonds</a>
-                </h3>
-                <p className="service-text fs-xs mb-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
-                </p>
-                <a href="shop.html" className="icon-btn">
-                  <i className="fal fa-long-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          {/* <div className="col-md-6 col-xl-4">
-            <div className="service-box1">
-              <div className="sr-shape1">
-                <img
-                  src="./src/assets/img/shape/service-s-1-1.png"
-                  alt="Image"
-                />
-              </div>
-              <div className="sr-shape2">
-                <img
-                  src="./src/assets/img/shape/service-s-1-2.png"
-                  alt="Image"
-                />
-              </div>
-              <div className="service-img">
-                <img
-                  src="./src/assets/img/service/service-img-2.png"
-                  alt="Service Image"
-                />
-              </div>
-              <div className="service-content">
-                <h3 className="service-title h2 fw-semibold">
-                  <a href="service.html">Hazelnuts</a>
-                </h3>
-                <p className="service-text fs-xs mb-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
-                </p>
-                <a href="shop.html" className="icon-btn">
-                  <i className="fal fa-long-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div> */}
-          {/* <div className="col-md-6 col-xl-4">
-            <div className="service-box1">
-              <div className="sr-shape1">
-                <img
-                  src="./src/assets/img/shape/service-s-1-1.png"
-                  alt="Image"
-                />
-              </div>
-              <div className="sr-shape2">
-                <img
-                  src="./src/assets/img/shape/service-s-1-2.png"
-                  alt="Image"
-                />
-              </div>
-              <div className="service-img">
-                <img
-                  src="./src/assets/img/service/service-img-3.png"
-                  alt="Service Image"
-                />
-              </div>
-              <div className="service-content">
-                <h3 className="service-title h2 fw-semibold">
-                  <a href="service.html">Peanuts</a>
-                </h3>
-                <p className="service-text fs-xs mb-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
-                </p>
-                <a href="shop.html" className="icon-btn">
-                  <i className="fal fa-long-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div> */}
-          {/* <div className="col-md-6 col-xl-4">
-            <div className="service-box1">
-              <div className="sr-shape1">
-                <img
-                  src="./src/assets/img/shape/service-s-1-1.png"
-                  alt="Image"
-                />
-              </div>
-              <div className="sr-shape2">
-                <img
-                  src="./src/assets/img/shape/service-s-1-2.png"
-                  alt="Image"
-                />
-              </div>
-              <div className="service-img">
-                <img
-                  src="./src/assets/img/service/service-img-4.png"
-                  alt="Service Image"
-                />
-              </div>
-              <div className="service-content">
-                <h3 className="service-title h2 fw-semibold">
-                  <a href="service.html">Pumpkin</a>
-                </h3>
-                <p className="service-text fs-xs mb-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
-                </p>
-                <a href="shop.html" className="icon-btn">
-                  <i className="fal fa-long-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div> */}
+          {featureItems}
         </div>
       </div>
     </section>

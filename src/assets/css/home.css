@@ -1,0 +1,18 @@
+.hero-slider-container * {
+    color: rgb(226, 226, 226);    
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.features-wrap1 {
+    margin-top: -80px;
+    position: absolute;
+    left: 50%;
+    z-index: 31;
+    transform: translate(-50%);
+    width: max-content;
+}
+.service-img img {
+    width: 227px;
+    height: 227px;
+}

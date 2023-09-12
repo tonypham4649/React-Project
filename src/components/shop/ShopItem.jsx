@@ -22,7 +22,7 @@ export default function ShopItem({ id, name, price, imgUrl }) {
         </div>
         <div className="product-content">
           <div className="actions-btn">
-            <a href="cart.html">
+            <a href="">
               <i className="fal fa-cart-plus"></i>
             </a>
             <a href="assets/img/shop/product-1-3.png" className="popup-image">
@@ -33,7 +33,7 @@ export default function ShopItem({ id, name, price, imgUrl }) {
             </a>
           </div>
           <h4 className="product-title h5 mb-0">
-            <a href="shop-details.html">{name}</a>
+            <a href="">{name}</a>
           </h4>
           <span className="price font-theme">
             <strong>${price}</strong>

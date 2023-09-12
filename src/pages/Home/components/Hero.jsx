@@ -1,94 +1,39 @@
 export default function Hero() {
-  const data = {};
-
   return (
     <section className="vs-hero-wrapper hero-layout4 ">
       <div
         className="vs-hero-carousel"
-        data-height="850"
-        data-container="1800"
+        data-height="850px"
+        data-container="1800px"
         data-slidertype="fullwidth"
+        style={{
+          height: "850px",
+          backgroundImage: "url(/src/assets/img/hero/hero-bg-3-1.jpg)",
+          backgroundSize: "cover",
+          boxShadow: "inset 0 0 0 2000px rgba(0, 0, 0, 0.363)",
+        }}
       >
-        <div
-        // className="ls-slide"
-        // dataLs="duration: 8000; transition2d: 5; kenburnszoom:out; kenburnsscale:1.1;"
-        >
-          <img
-            src="/src/assets/img/hero/hero-bg-3-1.jpg"
-            alt="Hero Image"
-            className="ls-bg"
-          />
-          {/* <p
-            className="ls-l ls-hide-tablet ls-hide-desktop"
-            style={{
-              left: "50%",
-              top: "180px",
-              textAlign: "center",
-              fontWeight: 600,
-              fontSize: "52px", 
-              letterSpacing: "0.9em",
-              textTransform: "uppercase",
-              color: "#000000",
-            }}
-            data-ls="minfontsize: 10px; durationin: 1500;  delayin: 0; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; texttypein: chars_asc; textshiftin: 100; textoffsetyin: -100; textrotatein: -45; parallax: true; parallaxlevel: 2;  "
-          >
-            Top selling
-          </p>
-          <h1
-            className="ls-l ls-hide-tablet ls-hide-desktop"
-            style={{
-              left: "50%",
-              top: "280px",
-              textAlign: "center",
-              fontWeight: 700,
-              fontSize: "160px",
-              color: "#000000",
-              textTransform: "uppercase",
-            }}
-            data-ls="offsetyin: 100; fadein: true; durationin: 1000; delayin: 200; easingin: easeInOutSine; parallax: true; parallaxlevel: 3; "
-          >
-            Organic Food
-          </h1>
-          <h1
-            className="ls-l ls-hide-tablet ls-hide-desktop"
-            style={{
-              left: "50%",
-              top: "480px",
-              textAlign: "center",
-              fontWeight: 700,
-              fontSize: "160px",
-              color: "#000000",
-              textTransform: "uppercase",
-            }}
-            data-ls="offsetyin: 100; fadein: true; durationin: 1800; delayin: 600; easingin: easeInOutSine; parallax: true; parallaxlevel: 3; "
-          >
-            20% Off
-          </h1>
+        <div className="hero-slider-container">
           <p
-            className="ls-l ls-hide-phone"
+            className="ls-l ls-hide-tablet ls-hide-desktop"
             style={{
-              left: "50%",
-              top: "385px",
+              top: "400px",
               textAlign: "center",
               fontWeight: 600,
-              fontSize: "18px",
+              fontSize: "52px",
               letterSpacing: "0.9em",
               textTransform: "uppercase",
-              color: "#000000",
             }}
-            data-ls="minfontsize: 10px; durationin: 1500;  delayin: 0; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; texttypein: chars_asc; textshiftin: 100; textoffsetyin: -100; textrotatein: -45; parallax: true; parallaxlevel: 2;  "
           >
             Top selling
           </p>
           <h1
-            className="ls-l ls-hide-phone"
+            className="ls-l ls-hide-tablet ls-hide-desktop"
             style={{
-              left: "50%",
-              top: "415px",
+              top: "550px",
               textAlign: "center",
               fontWeight: 700,
-              fontSize: "80px",
-              color: "#000000",
+              fontSize: "160px",
               textTransform: "uppercase",
             }}
             data-ls="offsetyin: 100; fadein: true; durationin: 1000; delayin: 200; easingin: easeInOutSine; parallax: true; parallaxlevel: 3; "
@@ -96,31 +41,27 @@ export default function Hero() {
             Organic Food
           </h1>
           <h1
-            className="ls-l ls-hide-phone"
+            className="ls-l ls-hide-tablet ls-hide-desktop"
             style={{
-              left: "50%",
-              top: "503px",
+              top: "750px",
               textAlign: "center",
               fontWeight: 700,
-              fontSize: "80px",
-              color: "#000000",
+              fontSize: "160px",
               textTransform: "uppercase",
             }}
             data-ls="offsetyin: 100; fadein: true; durationin: 1800; delayin: 600; easingin: easeInOutSine; parallax: true; parallaxlevel: 3; "
           >
             20% Off
-          </h1> */}
+          </h1>
           <div
             className="ls-l ls-hide-phone"
             style={{
-              left: "49%",
-              top: "630px",
+              top: "900px",
               textAlign: "center",
             }}
-            data-ls="offsetyin: 100; fadein: true; durationin: 2000; delayin: 900; parallax: true; parallaxlevel: 2;"
           >
             <a
-              href="shop.html"
+              href=""
               className="vs-btn hero-btn center"
               style={{
                 boxShadow: "none",

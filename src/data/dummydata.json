@@ -9,7 +9,8 @@
         "rate": 3.8,
         "promotion": false,
         "sale": 0.0,
-        "soldVolume": 200
+        "soldVolume": 200,
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
     },
     {
         "id": 2,
@@ -21,7 +22,8 @@
         "rate": 4.5,
         "promotion": true,
         "sale": 0.15,
-        "soldVolume": 300
+        "soldVolume": 300,
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
     },
     {
         "id": 3,
@@ -33,7 +35,8 @@
         "rate": 4.2,
         "promotion": false,
         "sale": 0.0,
-        "soldVolume": 450
+        "soldVolume": 450,
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
     },
     {
         "id": 4,
@@ -45,7 +48,86 @@
         "rate": 4.9,
         "promotion": true,
         "sale": 0.1,
-        "soldVolume": 1000
+        "soldVolume": 1000,
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+    },
+    {
+        "id": 5,
+        "name": "potato",
+        "imgUrl": "/src/assets/img/foods/potato.jpg",
+        "price": 1.99,
+        "size": 100,
+        "category": "fresh",
+        "rate": 3.8,
+        "promotion": false,
+        "sale": 0.0,
+        "soldVolume": 200,
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+    },
+    {
+        "id": 6,
+        "name": "tomato",
+        "imgUrl": "/src/assets/img/foods/tomato.jpg",
+        "price": 1.54,
+        "size": 100,
+        "category": "fresh",
+        "rate": 4.5,
+        "promotion": true,
+        "sale": 0.15,
+        "soldVolume": 300,
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+    },
+    {
+        "id": 7,
+        "name": "carrot",
+        "imgUrl": "/src/assets/img/foods/carrot.jpg",
+        "price": 1.75,
+        "size": 100,
+        "category": "fresh",
+        "rate": 4.2,
+        "promotion": false,
+        "sale": 0.0,
+        "soldVolume": 450,
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+    },
+    {
+        "id": 8,
+        "name": "avocado",
+        "imgUrl": "/src/assets/img/foods/avocado.jpg",
+        "price": 2.20,
+        "size": 100,
+        "category": "fresh",
+        "rate": 4.9,
+        "promotion": true,
+        "sale": 0.1,
+        "soldVolume": 1000,
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+    },
+    {
+        "id": 9,
+        "name": "carrot",
+        "imgUrl": "/src/assets/img/foods/carrot.jpg",
+        "price": 1.75,
+        "size": 100,
+        "category": "fresh",
+        "rate": 4.2,
+        "promotion": false,
+        "sale": 0.0,
+        "soldVolume": 450,
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+    },
+    {
+        "id": 10,
+        "name": "avocado",
+        "imgUrl": "/src/assets/img/foods/avocado.jpg",
+        "price": 2.20,
+        "size": 100,
+        "category": "fresh",
+        "rate": 4.9,
+        "promotion": true,
+        "sale": 0.1,
+        "soldVolume": 1000,
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
     }
 
 ]
