@@ -1,4 +1,10 @@
+import Items from "/src/data/dummydata.json";
+import { useState } from "react";
+
 export default function FeatureLatestProducts() {
+  // const [filterValue, setFilterValue] = useState("all");
+  // const [products, setProducts] = useState(Items);
+
   return (
     <section className="vs-shop-wrapper position-relative space-md-bottom">
       <div className="container">
@@ -37,6 +43,7 @@ export default function FeatureLatestProducts() {
             <i className="flaticon-healthy-food"></i>Season
           </button>
         </div>
+
         <div className="row filter-active">
           <div className="col-sm-6 col-md-4 col-lg-6 col-xl-4 grid-item freshfood">
             <div className="vs-product-box2 thumb_swap  d-lg-flex has-border">
