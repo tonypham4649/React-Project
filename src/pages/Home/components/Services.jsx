@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import shopItems from "/src/data/dummydata.json";
 
 export default function Services() {
@@ -15,13 +16,11 @@ export default function Services() {
             <img src={item.imgUrl} alt="Service Image" />
           </div>
           <div className="service-content">
-            <h3 className="service-title h2 fw-semibold">
-              <a href="service.html">{item.name}</a>
-            </h3>
+            <h3 className="service-title h2 fw-semibold">{item.name}</h3>
             <p className="service-text fs-xs mb-0">{item.description}</p>
-            <a href="shop.html" className="icon-btn">
+            <Link to="/shop" className="icon-btn">
               <i className="fal fa-long-arrow-right"></i>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -8,10 +8,10 @@ export default function StickyNav() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/products">Products</Link>
+          <Link to="/shop">Products</Link>
         </li>
         <li>
-          <Link to="/contactus">Contact Us</Link>
+          <Link to="/contact">Contact Us</Link>
         </li>
       </ul>
     </nav>

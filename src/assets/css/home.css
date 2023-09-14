@@ -1,3 +1,10 @@
+ul li a {
+    text-decoration: none;
+}
+ul li Link {
+    text-decoration: none;
+}
+
 .hero-slider-container * {
     color: rgb(226, 226, 226);    
     position: absolute;
@@ -11,6 +18,10 @@
     z-index: 31;
     transform: translate(-50%);
     width: max-content;
+    cursor: pointer;
+}
+.features-wrap1 .container .row .vs-feature-box2 {
+    padding: 2rem;
 }
 .service-img img {
     width: 227px;

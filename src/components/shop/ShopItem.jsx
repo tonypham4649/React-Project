@@ -41,9 +41,7 @@ export default function ShopItemEle({ id, name, price, imgUrl }) {
             </a>
           </div>
 
-          <h4 className="product-title h5 mb-0">
-            <a href="">{name}</a>
-          </h4>
+          <h4 className="product-title h5 mb-0">{name}</h4>
           <span className="price font-theme">
             <strong>${price}</strong>
           </span>

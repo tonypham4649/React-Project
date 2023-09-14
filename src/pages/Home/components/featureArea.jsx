@@ -10,7 +10,7 @@ export default function Feature() {
             </div>
             <div className="feature-content">
               <h3 className="feature-title h4 fw-semibold mb-2">
-                Pick a starter option
+                Pick a product
               </h3>
               <p className="feature-text mb-0 fs-xs">
                 Lorem ipsum dolor sit amet elit sed
@@ -24,7 +24,7 @@ export default function Feature() {
             </div>
             <div className="feature-content">
               <h3 className="feature-title h4 fw-semibold mb-2">
-                Shop groceries
+                Check the cart
               </h3>
               <p className="feature-text mb-0 fs-xs">
                 Lorem ipsum dolor sit amet elit sed
