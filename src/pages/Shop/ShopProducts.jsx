@@ -1,5 +1,5 @@
-import ShopItem from "../../components/shop/ShopItem";
-import Items from "/src/data/dummydata.json";
+import ShopItemEle from "../../components/shop/ShopItem";
+import ShopItems from "/src/data/dummydata.json";
 
 export default function ShopProducts() {
   return (
@@ -80,9 +80,10 @@ export default function ShopProducts() {
                 aria-labelledby="tab-shop-grid"
               >
                 <div className="row">
-                  {Items.map((item) => (
-                    <ShopItem
+                  {ShopItems.map((item) => (
+                    <ShopItemEle
                       key={item.id}
+                      id={item.id}
                       name={item.name}
                       price={item.price}
                       imgUrl={item.imgUrl}

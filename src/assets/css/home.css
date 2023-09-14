@@ -16,3 +16,7 @@
     width: 227px;
     height: 227px;
 }
+.offcanvas-end {
+    right: auto;
+    left: auto;
+}

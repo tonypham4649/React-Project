@@ -2,8 +2,8 @@ import Items from "/src/data/dummydata.json";
 import { useState } from "react";
 
 export default function FeatureLatestProducts() {
-  // const [filterValue, setFilterValue] = useState("all");
-  // const [products, setProducts] = useState(Items);
+  const [filterValue, setFilterValue] = useState("all");
+  const [products, setProducts] = useState(Items);
 
   return (
     <section className="vs-shop-wrapper position-relative space-md-bottom">

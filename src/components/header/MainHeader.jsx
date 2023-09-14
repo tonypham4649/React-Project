@@ -1,7 +1,10 @@
+import { useShoppingCart } from "../../context/ShoppingCartContext";
 import Navbar from "../nav-bars/Navbar";
 import { Link } from "react-router-dom";
 
 export default function MainHeader() {
+  const { cartQuantity, openCart } = useShoppingCart();
+
   return (
     <header className="header-wrapper header-layout3 header3-margin ">
       <div className="container py-30">
@@ -25,16 +28,19 @@ export default function MainHeader() {
                 <i className="fal fa-heart"></i>
                 <span className="badge">0</span>
               </a>
-              <a
-                href="#"
+
+              <div
                 className="icon-btn has-badge bg2 me-4 sideMenuToggler"
+                onClick={openCart}
               >
                 <i className="fal fa-shopping-cart"></i>
-                <span className="badge">0</span>
-              </a>
+                <span className="badge">{cartQuantity}</span>
+              </div>
+
               <span className="icon-btn bg4">
                 <i className="fal fa-user"></i>
               </span>
+
               <ul>
                 <li>
                   <a href="login-register.html">Login</a>
