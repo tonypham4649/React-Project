@@ -5,7 +5,7 @@ export default function TitleBox() {
         <div className="row ">
           <div className="col-lg-7 col-xl-6 offset-lg-5 offset-xl-6">
             <div
-              className="middle-box d-flex bg-body align-items-center px-90 py-50  wow fadeIn"
+              className="middle-box d-flex bg-secondary align-items-center px-90 py-50  wow fadeIn"
               data-wow-delay="0.3s"
             >
               <span className="media-icon text-theme pr-35">

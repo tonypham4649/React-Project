@@ -1,3 +1,4 @@
+import { Button } from "react-bootstrap";
 import { useShoppingCart } from "../../context/ShoppingCartContext";
 
 export default function ShopItemEle({ id, name, price, imgUrl }) {
@@ -47,9 +48,9 @@ export default function ShopItemEle({ id, name, price, imgUrl }) {
           </span>
           <div>
             {quantity === 0 ? (
-              <button onClick={() => increaseCartQuantity(id)}>
+              <Button onClick={() => increaseCartQuantity(id)}>
                 Add to card
-              </button>
+              </Button>
             ) : (
               <div
                 className="d-flex align-items-center flex-column"
@@ -59,7 +60,7 @@ export default function ShopItemEle({ id, name, price, imgUrl }) {
                   className="d-flex align-items-center justify-content-center"
                   style={{ gap: "0.5rem" }}
                 >
-                  <button
+                  <Button
                     style={{
                       borderRadius: "5px",
                       backgroundColor: "blue",
@@ -69,11 +70,11 @@ export default function ShopItemEle({ id, name, price, imgUrl }) {
                     onClick={() => decreaseCartQuantity(id)}
                   >
                     -
-                  </button>
+                  </Button>
                   <div>
                     <span className="fs-3">{quantity}</span> in cart
                   </div>
-                  <button
+                  <Button
                     style={{
                       borderRadius: "5px",
                       backgroundColor: "blue",
@@ -83,14 +84,14 @@ export default function ShopItemEle({ id, name, price, imgUrl }) {
                     onClick={() => increaseCartQuantity(id)}
                   >
                     +
-                  </button>
+                  </Button>
                 </div>
-                <button
+                <Button
                   style={{ backgroundColor: "red", color: "white" }}
                   onClick={() => removeFromCart(id)}
                 >
                   Remove
-                </button>
+                </Button>
               </div>
             )}
           </div>

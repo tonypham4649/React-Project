@@ -91,7 +91,7 @@ export default function Footer() {
                 <h4 className="widget_title text-white">Subscribe</h4>
                 <form className="footer-newsletter pt-2">
                   <input
-                    className="form-control mb-25 dark"
+                    className="form-control mb-25 bg-light"
                     type="email"
                     placeholder="Your Email Address"
                     required=""

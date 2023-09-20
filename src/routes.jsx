@@ -2,7 +2,6 @@
 import Home from "./pages/Home/Home";
 import Shop from "./pages/Shop/Shop";
 import ContactUs from "./pages/ContactUs/ContactUs";
-// import ErrorPage from "./pages/ErrorPage";
 
 const routes = [
   {

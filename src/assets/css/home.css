@@ -5,6 +5,10 @@ ul li Link {
     text-decoration: none;
 }
 
+.hero-btn{
+    text-decoration: none;
+}
+
 .hero-slider-container * {
     color: rgb(226, 226, 226);    
     position: absolute;

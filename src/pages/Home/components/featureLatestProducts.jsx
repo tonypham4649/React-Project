@@ -1,9 +1,17 @@
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Items from "/src/data/dummydata.json";
-import { useState } from "react";
 
 export default function FeatureLatestProducts() {
-  const [filterValue, setFilterValue] = useState("all");
   const [products, setProducts] = useState(Items);
+
+  function handleSetFilter(filterValue) {
+    if (filterValue === "all") {
+      setProducts(Items);
+    } else {
+      setProducts(() => Items.filter((item) => item.category === filterValue));
+    }
+  }
 
   return (
     <section className="vs-shop-wrapper position-relative space-md-bottom">
@@ -19,256 +27,83 @@ export default function FeatureLatestProducts() {
         <div className="filter-menu-style1 filter-menu-active text-center mb-65">
           <button
             className="active"
-            data-filter="*"
             data-bg-src="./src/assets/img/shape/shape-filter.png"
+            onClick={() => handleSetFilter("all")}
           >
             <i className="flaticon-salad"></i>Show All
           </button>
           <button
-            data-filter=".meat"
             data-bg-src="./src/assets/img/shape/shape-filter.png"
+            onClick={() => handleSetFilter("juice")}
           >
-            <i className="flaticon-salvsadbox-1"></i>Meat
+            <i className="flaticon-salvsadbox-1"></i>Juice
           </button>
           <button
-            data-filter=".freshfood"
             data-bg-src="./src/assets/img/shape/shape-filter.png"
+            onClick={() => handleSetFilter("fresh")}
           >
             <i className="flaticon-vegetables"></i>Fresh Food
           </button>
           <button
-            data-filter=".season"
             data-bg-src="./src/assets/img/shape/shape-filter.png"
+            onClick={() => handleSetFilter("smoothie")}
           >
-            <i className="flaticon-healthy-food"></i>Season
+            <i className="flaticon-healthy-food"></i>Smoothie
           </button>
         </div>
 
         <div className="row filter-active">
-          <div className="col-sm-6 col-md-4 col-lg-6 col-xl-4 grid-item freshfood">
-            <div className="vs-product-box2 thumb_swap  d-lg-flex has-border">
-              <div className="product-tag1">sale</div>
-              <div className="product-img">
-                <a href="shop-details.html">
-                  <img
-                    src="./src/assets/img/shop/product-2-1.png"
-                    alt="Product Image"
-                    className="w-100"
-                  />
-                </a>
-                <a href="shop-details.html">
-                  <img
-                    src="./src/assets/img/shop/product-2-6.png"
-                    alt="Product Image"
-                    className="w-100 img_swap"
-                  />
-                </a>
-              </div>
-              <div className="product-content d-lg-flex align-items-center">
-                <div>
-                  <h4 className="product-title h5 mb-1">
-                    <a href="shop-details.html">French Dip</a>
-                  </h4>
-                  <span className="price font-theme">
-                    <strong>$40.00</strong>
-                  </span>
-                  <p className="m-0 rating fs-xs text-theme lh-base">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                  </p>
+          {products.slice(0, 6).map((item) => {
+            return (
+              <div
+                className="col-sm-6 col-md-4 col-lg-6 col-xl-4 grid-item "
+                key={item.id}
+                id={item.id}
+              >
+                <div className="vs-product-box2 thumb_swap  d-lg-flex has-border">
+                  {item.sale > 0 ? (
+                    <div className="product-tag1">sale</div>
+                  ) : null}
+                  <div className="product-img">
+                    <Link to="/shop">
+                      <img
+                        src={item.imgUrl}
+                        alt="Product Image"
+                        className="w-100"
+                      />
+                    </Link>
+                  </div>
+                  <div className="product-content d-lg-flex align-items-center">
+                    <div>
+                      <h4 className="product-title h5 mb-1">
+                        <Link to="/shop" style={{ textDecoration: "none" }}>
+                          {item.name}
+                        </Link>
+                      </h4>
+                      <span className="price font-theme">
+                        <strong>${item.price}</strong>
+                      </span>
+                      <p className="m-0 rating fs-xs text-theme lh-base">
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                      </p>
+                      {item.sale > 0 ? (
+                        <p
+                          className="bg-danger text-white"
+                          style={{ marginTop: ".5rem" }}
+                        >
+                          {item.sale * 100}% off
+                        </p>
+                      ) : null}
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-md-4 col-lg-6 col-xl-4 grid-item meat">
-            <div className="vs-product-box2 thumb_swap  d-lg-flex has-border">
-              <div className="product-img">
-                <a href="shop-details.html">
-                  <img
-                    src="./src/assets/img/shop/product-2-2.png"
-                    alt="Product Image"
-                    className="w-100"
-                  />
-                </a>
-                <a href="shop-details.html">
-                  <img
-                    src="./src/assets/img/shop/product-2-5.png"
-                    alt="Product Image"
-                    className="w-100 img_swap"
-                  />
-                </a>
-              </div>
-              <div className="product-content d-lg-flex align-items-center">
-                <div>
-                  <h4 className="product-title h5 mb-1">
-                    <a href="shop-details.html">Haiku Roll</a>
-                  </h4>
-                  <span className="price font-theme">
-                    <strong>$22.00</strong>
-                  </span>
-                  <p className="m-0 rating fs-xs text-theme lh-base">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-md-4 col-lg-6 col-xl-4 grid-item freshfood">
-            <div className="vs-product-box2 thumb_swap  d-lg-flex has-border">
-              <div className="product-img">
-                <a href="shop-details.html">
-                  <img
-                    src="./src/assets/img/shop/product-2-3.png"
-                    alt="Product Image"
-                    className="w-100"
-                  />
-                </a>
-                <a href="shop-details.html">
-                  <img
-                    src="./src/assets/img/shop/product-2-4.png"
-                    alt="Product Image"
-                    className="w-100 img_swap"
-                  />
-                </a>
-              </div>
-              <div className="product-content d-lg-flex align-items-center">
-                <div>
-                  <h4 className="product-title h5 mb-1">
-                    <a href="shop-details.html">Plum Silho</a>
-                  </h4>
-                  <span className="price font-theme">
-                    <strong>$40.00</strong>
-                  </span>
-                  <p className="m-0 rating fs-xs text-theme lh-base">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-md-4 col-lg-6 col-xl-4 grid-item meat season">
-            <div className="vs-product-box2 thumb_swap  d-lg-flex has-border">
-              <div className="product-img">
-                <a href="shop-details.html">
-                  <img
-                    src="./src/assets/img/shop/product-2-4.png"
-                    alt="Product Image"
-                    className="w-100"
-                  />
-                </a>
-                <a href="shop-details.html">
-                  <img
-                    src="./src/assets/img/shop/product-2-3.png"
-                    alt="Product Image"
-                    className="w-100 img_swap"
-                  />
-                </a>
-              </div>
-              <div className="product-content d-lg-flex align-items-center">
-                <div>
-                  <h4 className="product-title h5 mb-1">
-                    <a href="shop-details.html">Avocado Roll</a>
-                  </h4>
-                  <span className="price font-theme">
-                    <strong>$55.00</strong>
-                  </span>
-                  <p className="m-0 rating fs-xs text-theme lh-base">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-md-4 col-lg-6 col-xl-4 grid-item freshfood season">
-            <div className="vs-product-box2 thumb_swap  d-lg-flex has-border">
-              <div className="product-img">
-                <a href="shop-details.html">
-                  <img
-                    src="./src/assets/img/shop/product-2-5.png"
-                    alt="Product Image"
-                    className="w-100"
-                  />
-                </a>
-                <a href="shop-details.html">
-                  <img
-                    src="./src/assets/img/shop/product-2-2.png"
-                    alt="Product Image"
-                    className="w-100 img_swap"
-                  />
-                </a>
-              </div>
-              <div className="product-content d-lg-flex align-items-center">
-                <div>
-                  <h4 className="product-title h5 mb-1">
-                    <a href="shop-details.html">Asian Noodles</a>
-                  </h4>
-                  <span className="price font-theme">
-                    <strong>$49.00</strong>
-                  </span>
-                  <p className="m-0 rating fs-xs text-theme lh-base">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-md-4 col-lg-6 col-xl-4 grid-item meat season">
-            <div className="vs-product-box2 thumb_swap  d-lg-flex has-border">
-              <div className="product-tag1">sale</div>
-              <div className="product-img">
-                <a href="shop-details.html">
-                  <img
-                    src="./src/assets/img/shop/product-2-6.png"
-                    alt="Product Image"
-                    className="w-100"
-                  />
-                </a>
-                <a href="shop-details.html">
-                  <img
-                    src="./src/assets/img/shop/product-2-1.png"
-                    alt="Product Image"
-                    className="w-100 img_swap"
-                  />
-                </a>
-              </div>
-              <div className="product-content d-lg-flex align-items-center">
-                <div>
-                  <h4 className="product-title h5 mb-1">
-                    <a href="shop-details.html">Carne Asada</a>
-                  </h4>
-                  <span className="price font-theme">
-                    <strong>$99.00</strong>
-                  </span>
-                  <p className="m-0 rating fs-xs text-theme lh-base">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>

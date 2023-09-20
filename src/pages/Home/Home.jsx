@@ -5,7 +5,6 @@ import TitleBox from "./components/TitleBox";
 import Services from "./components/Services";
 import FeatureLatestProducts from "./components/featureLatestProducts";
 import Testimonial from "./components/Testimonial";
-import FeatureProduct from "./components/featureProducts";
 import Faq from "./components/FAQ";
 
 export default function Home() {
@@ -18,7 +17,6 @@ export default function Home() {
       <Services />
       <FeatureLatestProducts />
       <Testimonial />
-      <FeatureProduct />
       <Faq />
     </>
   );

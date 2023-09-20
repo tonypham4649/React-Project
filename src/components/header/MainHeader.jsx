@@ -24,11 +24,6 @@ export default function MainHeader() {
               <i className="far fa-bars"></i>
             </button>
             <div className="head-top-links text-body2 d-none d-lg-block">
-              <a href="wishlist.html" className="icon-btn has-badge bg3 me-3">
-                <i className="fal fa-heart"></i>
-                <span className="badge">0</span>
-              </a>
-
               <div
                 className="icon-btn has-badge bg2 me-4 sideMenuToggler"
                 onClick={openCart}

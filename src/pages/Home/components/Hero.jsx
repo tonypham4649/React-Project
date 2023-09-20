@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Hero() {
   return (
     <section className="vs-hero-wrapper hero-layout4 ">
@@ -60,15 +62,15 @@ export default function Hero() {
               textAlign: "center",
             }}
           >
-            <a
-              href=""
+            <Link
+              to="/shop"
               className="vs-btn hero-btn center"
               style={{
                 boxShadow: "none",
               }}
             >
               Purchase
-            </a>
+            </Link>
           </div>
         </div>
       </div>
