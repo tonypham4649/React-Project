@@ -1,93 +1,102 @@
 [
     {
-        "id": 1,
+        "_id": "6512a45fd7af12f9a1f13e4b",
         "name": "potato",
-        "imgUrl": "/src/assets/img/foods/potato.jpg",
+        "image": "https://i.imgur.com/BFT86NQ.jpg",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        "size": "300g",
         "price": 1.99,
         "category": "juice",
-        "sale": 0.0,
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+        "__v": 0
     },
     {
-        "id": 2,
+        "_id": "6512a7d02f73d5da0d3afb8b",
         "name": "tomato",
-        "imgUrl": "/src/assets/img/foods/tomato.jpg",
-        "price": 1.54,
+        "image": "https://i.imgur.com/xUh7r8e.jpg",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        "size": "450g",
+        "price": 2.99,
         "category": "fresh",
-        "sale": 0.15,
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+        "__v": 0
     },
     {
-        "id": 3,
-        "name": "carrot",
-        "imgUrl": "/src/assets/img/foods/carrot.jpg",
-        "price": 1.75,
+        "_id": "6512a7e42f73d5da0d3afb8e",
+        "name": "apple",
+        "image": "https://i.imgur.com/JnVdDxu.jpg",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        "size": "500g",
+        "price": 0.99,
         "category": "smoothie",
-        "sale": 0.0,
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+        "__v": 0
     },
     {
-        "id": 4,
+        "_id": "6512a7ef2f73d5da0d3afb90",
         "name": "avocado",
-        "imgUrl": "/src/assets/img/foods/avocado.jpg",
-        "price": 2.20,
+        "image": "https://i.imgur.com/9VNHs7j.jpg",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        "size": "1000g",
+        "price": 2.5,
         "category": "juice",
-        "sale": 0.1,
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+        "__v": 0
     },
     {
-        "id": 5,
-        "name": "potato",
-        "imgUrl": "/src/assets/img/foods/potato.jpg",
-        "price": 1.99,
+        "_id": "6512a7f52f73d5da0d3afb92",
+        "name": "cabbage",
+        "image": "https://i.imgur.com/exAbGDb.jpg",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        "size": "1500g",
+        "price": 0.5,
         "category": "fresh",
-        "sale": 0.0,
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+        "__v": 0
     },
     {
-        "id": 6,
-        "name": "tomato",
-        "imgUrl": "/src/assets/img/foods/tomato.jpg",
-        "price": 1.54,
-        "category": "smoothie",
-        "sale": 0.15,
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
-    },
-    {
-        "id": 7,
+        "_id": "6512a7fd2f73d5da0d3afb94",
         "name": "carrot",
-        "imgUrl": "/src/assets/img/foods/carrot.jpg",
-        "price": 1.75,
-        "category": "juice",
-        "sale": 0.0,
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+        "image": "https://i.imgur.com/s1GsUU2.jpg",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        "size": "300g",
+        "price": 1.05,
+        "category": "smoothie",
+        "__v": 0
     },
     {
-        "id": 8,
-        "name": "avocado",
-        "imgUrl": "/src/assets/img/foods/avocado.jpg",
-        "price": 2.20,
+        "_id": "6512a8092f73d5da0d3afb96",
+        "name": "chestnut",
+        "image": "https://i.imgur.com/WnwoBnz.jpg",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        "size": "450g",
+        "price": 2.5,
         "category": "fresh",
-        "sale": 0.1,
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+        "__v": 0
     },
     {
-        "id": 9,
-        "name": "carrot",
-        "imgUrl": "/src/assets/img/foods/carrot.jpg",
-        "price": 1.75,
-        "category": "smoothie",
-        "sale": 0.0,
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+        "_id": "6512a8182f73d5da0d3afb98",
+        "name": "corn",
+        "image": "https://i.imgur.com/1loZ41C.jpg",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        "size": "500g",
+        "price": 0.75,
+        "category": "fresh",
+        "__v": 0
     },
     {
-        "id": 10,
-        "name": "avocado",
-        "imgUrl": "/src/assets/img/foods/avocado.jpg",
-        "price": 2.20,
+        "_id": "6512a8242f73d5da0d3afb9a",
+        "name": "snapbean",
+        "image": "https://i.imgur.com/mu0pepm.jpg",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        "size": "1000g",
+        "price": 1.25,
         "category": "juice",
-        "sale": 0.1,
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+        "__v": 0
+    },
+    {
+        "_id": "6512a82a2f73d5da0d3afb9c",
+        "name": "watermelon",
+        "image": "https://i.imgur.com/HI1ZYcq.jpg",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        "size": "1500g",
+        "price": 2.75,
+        "category": "smoothie",
+        "__v": 0
     }
-
 ]

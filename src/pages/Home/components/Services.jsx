@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
-import shopItems from "/src/data/dummydata.json";
+import useDataFetcher from "../../../api/DataFetcher";
 
 export default function Services() {
-  const featureItems = shopItems.slice(0, 6).map((item) => {
+  const { data, loading, error } = useDataFetcher();
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error.message}</div>;
+  if (!data || data.length === 0) return <div>No items found</div>;
+
+  const featureItems = data.slice(0, 6).map((item) => {
     return (
       <div className="col-md-6 col-xl-4" key={item.id}>
         <div className="service-box1">
@@ -13,7 +19,7 @@ export default function Services() {
             <img src="./src/assets/img/shape/service-s-1-2.png" alt="Image" />
           </div>
           <div className="service-img">
-            <img src={item.imgUrl} alt="Service Image" />
+            <img src={item.image} alt="Service Image" />
           </div>
           <div className="service-content">
             <h3 className="service-title h2 fw-semibold">{item.name}</h3>

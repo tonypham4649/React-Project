@@ -1,17 +1,27 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import Items from "/src/data/dummydata.json";
+import useDataFetcher from "../../../api/DataFetcher";
 
 export default function FeatureLatestProducts() {
-  const [products, setProducts] = useState(Items);
+  const { data, loading, error } = useDataFetcher();
+  const [products, setProducts] = useState([]);
+  const [activeFilter, setActiveFilter] = useState();
 
   function handleSetFilter(filterValue) {
+    setActiveFilter(filterValue);
+
     if (filterValue === "all") {
-      setProducts(Items);
+      setProducts(data);
     } else {
-      setProducts(() => Items.filter((item) => item.category === filterValue));
+      setProducts(() => data.filter((item) => item.category === filterValue));
     }
   }
+
+  useEffect(() => {
+    if (data) {
+      setProducts(data);
+    }
+  }, [data]);
 
   return (
     <section className="vs-shop-wrapper position-relative space-md-bottom">
@@ -26,25 +36,28 @@ export default function FeatureLatestProducts() {
         </div>
         <div className="filter-menu-style1 filter-menu-active text-center mb-65">
           <button
-            className="active"
+            className={activeFilter === "all" ? "active" : ""}
             data-bg-src="./src/assets/img/shape/shape-filter.png"
             onClick={() => handleSetFilter("all")}
           >
             <i className="flaticon-salad"></i>Show All
           </button>
           <button
+            className={activeFilter === "juice" ? "active" : ""}
             data-bg-src="./src/assets/img/shape/shape-filter.png"
             onClick={() => handleSetFilter("juice")}
           >
             <i className="flaticon-salvsadbox-1"></i>Juice
           </button>
           <button
+            className={activeFilter === "fresh" ? "active" : ""}
             data-bg-src="./src/assets/img/shape/shape-filter.png"
             onClick={() => handleSetFilter("fresh")}
           >
             <i className="flaticon-vegetables"></i>Fresh Food
           </button>
           <button
+            className={activeFilter === "smoothie" ? "active" : ""}
             data-bg-src="./src/assets/img/shape/shape-filter.png"
             onClick={() => handleSetFilter("smoothie")}
           >
@@ -67,7 +80,7 @@ export default function FeatureLatestProducts() {
                   <div className="product-img">
                     <Link to="/shop">
                       <img
-                        src={item.imgUrl}
+                        src={item.image}
                         alt="Product Image"
                         className="w-100"
                       />
