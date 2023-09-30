@@ -1,13 +1,8 @@
 import { Link } from "react-router-dom";
-import useDataFetcher from "../../../api/DataFetcher";
+import { useData } from "../../../context/DataContext";
 
 export default function Services() {
-  const { data, loading, error } = useDataFetcher();
-
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error.message}</div>;
-  if (!data || data.length === 0) return <div>No items found</div>;
-
+  const data = useData();
   const featureItems = data.slice(0, 6).map((item) => {
     return (
       <div className="col-md-6 col-xl-4" key={item.id}>

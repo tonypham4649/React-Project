@@ -1,11 +1,11 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import useDataFetcher from "../../../api/DataFetcher";
+import { useData } from "../../../context/DataContext";
 
 export default function FeatureLatestProducts() {
-  const { data, loading, error } = useDataFetcher();
-  const [products, setProducts] = useState([]);
-  const [activeFilter, setActiveFilter] = useState();
+  const data = useData();
+  const [products, setProducts] = useState(data);
+  const [activeFilter, setActiveFilter] = useState("all");
 
   function handleSetFilter(filterValue) {
     setActiveFilter(filterValue);
@@ -16,12 +16,6 @@ export default function FeatureLatestProducts() {
       setProducts(() => data.filter((item) => item.category === filterValue));
     }
   }
-
-  useEffect(() => {
-    if (data) {
-      setProducts(data);
-    }
-  }, [data]);
 
   return (
     <section className="vs-shop-wrapper position-relative space-md-bottom">
