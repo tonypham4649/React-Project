@@ -3,7 +3,7 @@ export default function Footer() {
     <footer
       className="footer-wrapper footer-layout1"
       style={{
-        backgroundImage: "url(./src/assets/img/footer/footer-bg-2.jpg)",
+        backgroundImage: "url(/img/footer/footer-bg-2.jpg)",
       }}
     >
       <div className="container">

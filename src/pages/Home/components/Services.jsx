@@ -8,10 +8,10 @@ export default function Services() {
       <div className="col-md-6 col-xl-4" key={item.id}>
         <div className="service-box1">
           <div className="sr-shape1">
-            <img src="./src/assets/img/shape/service-s-1-1.png" alt="Image" />
+            <img src="img/shape/service-s-1-1.png" alt="Image" />
           </div>
           <div className="sr-shape2">
-            <img src="./src/assets/img/shape/service-s-1-2.png" alt="Image" />
+            <img src="img/shape/service-s-1-2.png" alt="Image" />
           </div>
           <div className="service-img">
             <img src={item.image} alt="Service Image" />
@@ -33,7 +33,7 @@ export default function Services() {
       <div
         className="service-shape1 position-absolute start-0 top-0"
         style={{
-          backgroundImage: "url(./src/assets/img/service/service-bg-1-2.png)",
+          backgroundImage: "url(img/service/service-bg-1-2.png)",
           backgroundSize: "cover",
           boxShadow: "inset 0 0 0 2000px rgba(0, 0, 0, 0.363)",
         }}
@@ -45,7 +45,7 @@ export default function Services() {
         >
           <h2 className="sec-title1 text-white">Netural Market</h2>
           <h3 className="sec-title2">Healthy Food</h3>
-          <img src="./src/assets/img/icons/sec-icon-1.png" alt="About Image" />
+          <img src="img/icons/sec-icon-1.png" alt="About Image" />
         </div>
         <div
           className="row vs-carousel  wow fadeIn"

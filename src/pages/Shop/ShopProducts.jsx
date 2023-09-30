@@ -12,7 +12,6 @@ export default function ShopProducts() {
               <div className="col-auto mb-3 mb-sm-0">
                 <div className="nav" role="tablist">
                   <a
-                    href="shop.html"
                     className="icon-btn style3 active me-2"
                     id="tab-shop-grid"
                     data-bs-toggle="tab"
@@ -24,7 +23,6 @@ export default function ShopProducts() {
                     <i className="fas fa-th"></i>
                   </a>
                   <a
-                    href="shop-list.html"
                     className="icon-btn style3  "
                     id="tab-shop-list"
                     data-bs-toggle="tab"
@@ -102,16 +100,16 @@ export default function ShopProducts() {
                   <div className="col-sm-6 col-lg-6 col-xl-6">
                     <div className="vs-product-box2 d-xl-flex has-border thumb_swap">
                       <div className="product-img">
-                        <a href="shop-details.html">
+                        <a>
                           <img
-                            src="/src/assets/img/shop/product-2-1.png"
+                            src="/img/shop/product-2-1.png"
                             alt="Product Image"
                             className="w-100"
                           />
                         </a>
-                        <a href="shop-details.html">
+                        <a>
                           <img
-                            src="/src/assets/img/shop/product-2-8.png"
+                            src="/img/shop/product-2-8.png"
                             alt="Product Image"
                             className="w-100 img_swap"
                           />
@@ -120,7 +118,7 @@ export default function ShopProducts() {
                       <div className="product-content d-xl-flex align-items-center">
                         <div>
                           <h4 className="product-title h5 mb-1">
-                            <a href="shop-details.html">Apple juice</a>
+                            <a>Apple juice</a>
                           </h4>
                           <span className="price font-theme">
                             <strong>$40.00</strong>
@@ -140,16 +138,16 @@ export default function ShopProducts() {
                     <div className="vs-product-box2 d-xl-flex has-border thumb_swap">
                       <div className="product-tag1">sale</div>
                       <div className="product-img">
-                        <a href="shop-details.html">
+                        <a>
                           <img
-                            src="/src/assets/img/shop/product-2-2.png"
+                            src="/img/shop/product-2-2.png"
                             alt="Product Image"
                             className="w-100"
                           />
                         </a>
-                        <a href="shop-details.html">
+                        <a>
                           <img
-                            src="/src/assets/img/shop/product-2-7.png"
+                            src="/img/shop/product-2-7.png"
                             alt="Product Image"
                             className="w-100 img_swap"
                           />
@@ -158,7 +156,7 @@ export default function ShopProducts() {
                       <div className="product-content d-xl-flex align-items-center">
                         <div>
                           <h4 className="product-title h5 mb-1">
-                            <a href="shop-details.html">Black Beans</a>
+                            <a>Black Beans</a>
                           </h4>
                           <span className="price font-theme">
                             <strong>$22 .00</strong>
@@ -177,16 +175,16 @@ export default function ShopProducts() {
                   <div className="col-sm-6 col-lg-6 col-xl-6">
                     <div className="vs-product-box2 d-xl-flex has-border thumb_swap">
                       <div className="product-img">
-                        <a href="shop-details.html">
+                        <a>
                           <img
-                            src="/src/assets/img/shop/product-2-3.png"
+                            src="/img/shop/product-2-3.png"
                             alt="Product Image"
                             className="w-100"
                           />
                         </a>
-                        <a href="shop-details.html">
+                        <a>
                           <img
-                            src="/src/assets/img/shop/product-2-6.png"
+                            src="/img/shop/product-2-6.png"
                             alt="Product Image"
                             className="w-100 img_swap"
                           />
@@ -195,7 +193,7 @@ export default function ShopProducts() {
                       <div className="product-content d-xl-flex align-items-center">
                         <div>
                           <h4 className="product-title h5 mb-1">
-                            <a href="shop-details.html">Plum Silho</a>
+                            <a>Plum Silho</a>
                           </h4>
                           <span className="price font-theme">
                             <strong>$83.00</strong>
@@ -214,16 +212,16 @@ export default function ShopProducts() {
                   <div className="col-sm-6 col-lg-6 col-xl-6">
                     <div className="vs-product-box2 d-xl-flex has-border thumb_swap">
                       <div className="product-img">
-                        <a href="shop-details.html">
+                        <a>
                           <img
-                            src="/src/assets/img/shop/product-2-4.png"
+                            src="/img/shop/product-2-4.png"
                             alt="Product Image"
                             className="w-100"
                           />
                         </a>
-                        <a href="shop-details.html">
+                        <a>
                           <img
-                            src="/src/assets/img/shop/product-2-5.png"
+                            src="/img/shop/product-2-5.png"
                             alt="Product Image"
                             className="w-100 img_swap"
                           />
@@ -232,7 +230,7 @@ export default function ShopProducts() {
                       <div className="product-content d-xl-flex align-items-center">
                         <div>
                           <h4 className="product-title h5 mb-1">
-                            <a href="shop-details.html">Carne Asada</a>
+                            <a>Carne Asada</a>
                           </h4>
                           <span className="price font-theme">
                             <strong>$78.00</strong>
@@ -251,16 +249,16 @@ export default function ShopProducts() {
                   <div className="col-sm-6 col-lg-6 col-xl-6">
                     <div className="vs-product-box2 d-xl-flex has-border thumb_swap">
                       <div className="product-img">
-                        <a href="shop-details.html">
+                        <a>
                           <img
-                            src="/src/assets/img/shop/product-2-5.png"
+                            src="/img/shop/product-2-5.png"
                             alt="Product Image"
                             className="w-100"
                           />
                         </a>
-                        <a href="shop-details.html">
+                        <a>
                           <img
-                            src="/src/assets/img/shop/product-2-4.png"
+                            src="/img/shop/product-2-4.png"
                             alt="Product Image"
                             className="w-100 img_swap"
                           />
@@ -269,7 +267,7 @@ export default function ShopProducts() {
                       <div className="product-content d-xl-flex align-items-center">
                         <div>
                           <h4 className="product-title h5 mb-1">
-                            <a href="shop-details.html">Quesadilla</a>
+                            <a>Quesadilla</a>
                           </h4>
                           <span className="price font-theme">
                             <strong>$48.00</strong>
@@ -289,16 +287,16 @@ export default function ShopProducts() {
                     <div className="vs-product-box2 d-xl-flex has-border thumb_swap">
                       <div className="product-tag1">sale</div>
                       <div className="product-img">
-                        <a href="shop-details.html">
+                        <a>
                           <img
-                            src="/src/assets/img/shop/product-2-6.png"
+                            src="/img/shop/product-2-6.png"
                             alt="Product Image"
                             className="w-100"
                           />
                         </a>
-                        <a href="shop-details.html">
+                        <a>
                           <img
-                            src="/src/assets/img/shop/product-2-3.png"
+                            src="/img/shop/product-2-3.png"
                             alt="Product Image"
                             className="w-100 img_swap"
                           />
@@ -307,7 +305,7 @@ export default function ShopProducts() {
                       <div className="product-content d-xl-flex align-items-center">
                         <div>
                           <h4 className="product-title h5 mb-1">
-                            <a href="shop-details.html">Pepperoni</a>
+                            <a>Pepperoni</a>
                           </h4>
                           <span className="price font-theme">
                             <strong>$45.00</strong>
@@ -326,16 +324,16 @@ export default function ShopProducts() {
                   <div className="col-sm-6 col-lg-6 col-xl-6">
                     <div className="vs-product-box2 d-xl-flex has-border thumb_swap">
                       <div className="product-img">
-                        <a href="shop-details.html">
+                        <a>
                           <img
-                            src="/src/assets/img/shop/product-2-7.png"
+                            src="/img/shop/product-2-7.png"
                             alt="Product Image"
                             className="w-100"
                           />
                         </a>
-                        <a href="shop-details.html">
+                        <a>
                           <img
-                            src="/src/assets/img/shop/product-2-2.png"
+                            src="/img/shop/product-2-2.png"
                             alt="Product Image"
                             className="w-100 img_swap"
                           />
@@ -344,7 +342,7 @@ export default function ShopProducts() {
                       <div className="product-content d-xl-flex align-items-center">
                         <div>
                           <h4 className="product-title h5 mb-1">
-                            <a href="shop-details.html">Meatballs</a>
+                            <a>Meatballs</a>
                           </h4>
                           <span className="price font-theme">
                             <strong>$52.00</strong>
@@ -363,16 +361,16 @@ export default function ShopProducts() {
                   <div className="col-sm-6 col-lg-6 col-xl-6">
                     <div className="vs-product-box2 d-xl-flex has-border thumb_swap">
                       <div className="product-img">
-                        <a href="shop-details.html">
+                        <a>
                           <img
-                            src="/src/assets/img/shop/product-2-8.png"
+                            src="/img/shop/product-2-8.png"
                             alt="Product Image"
                             className="w-100"
                           />
                         </a>
-                        <a href="shop-details.html">
+                        <a>
                           <img
-                            src="/src/assets/img/shop/product-2-1.png"
+                            src="/img/shop/product-2-1.png"
                             alt="Product Image"
                             className="w-100 img_swap"
                           />
@@ -381,7 +379,7 @@ export default function ShopProducts() {
                       <div className="product-content d-xl-flex align-items-center">
                         <div>
                           <h4 className="product-title h5 mb-1">
-                            <a href="shop-details.html">kidney beans</a>
+                            <a>kidney beans</a>
                           </h4>
                           <span className="price font-theme">
                             <strong>$23.00</strong>
@@ -403,54 +401,33 @@ export default function ShopProducts() {
             <div className="pagination-layout1 list-style-none mt-0 mt-lg-4 mb-30">
               <ul>
                 <li>
-                  <a href="#">Prev</a>
+                  <a>Prev</a>
                 </li>
                 <li>
-                  <a href="#" className="active">
-                    1
-                  </a>
+                  <a className="active">1</a>
                 </li>
                 <li>
-                  <a href="#">2</a>
+                  <a>2</a>
                 </li>
                 <li>
-                  <a href="#">3</a>
+                  <a>3</a>
                 </li>
                 <li>
-                  <a href="#">Next</a>
+                  <a>Next</a>
                 </li>
               </ul>
             </div>
           </div>
           <div className="col-lg-4 col-xl-3">
             <aside className="sidebar-area">
-              <div className="widget  ">
-                <h3 className="widget_title">Filter By</h3>
-                <div className="range-slider-area">
-                  <strong className="fs-xs">Price</strong>
-                  <div id="slider-range"></div>
-                  <div className="price-amount">
-                    <span id="minAmount"></span>
-                    <span id="maxAmount"></span>
-                  </div>
-                </div>
-              </div>
-              <div className="widget widget_categories   ">
-                <h3 className="widget_title">Categories</h3>
-                <ul>
-                  <li>
-                    <a href="#">Juice</a>
-                    <span>(06)</span>
-                  </li>
-                  <li>
-                    <a href="#">Fresh</a>
-                    <span>(10)</span>
-                  </li>
-                  <li>
-                    <a href="#">Smoothie</a>
-                    <span>(06)</span>
-                  </li>
-                </ul>
+              <div className="widget widget_search   ">
+                <h3 className="widget_title">Product Name</h3>
+                <form className="search-form">
+                  <input type="text" placeholder="Search" />
+                  <button type="submit">
+                    <i className="far fa-search"></i>
+                  </button>
+                </form>
               </div>
               <div className="widget widget_categories   ">
                 <h3 className="widget_title">Categories</h3>
@@ -472,23 +449,15 @@ export default function ShopProducts() {
                   </li>
                 </ul>
               </div>
-              <div className="widget widget_search   ">
-                <h3 className="widget_title">Product Name</h3>
-                <form className="search-form">
-                  <input type="text" placeholder="Search" />
-                  <button type="submit">
-                    <i className="far fa-search"></i>
-                  </button>
-                </form>
-              </div>
+
               <div className="widget widget_tag_cloud   ">
                 <h3 className="widget_title">Size</h3>
                 <div className="tagcloud">
-                  <a href="shop.html">300G</a>
-                  <a href="shop.html">450G</a>
-                  <a href="shop.html">1000G</a>
-                  <a href="shop.html">500G</a>
-                  <a href="shop.html">1200G</a>
+                  <a>300G</a>
+                  <a>450G</a>
+                  <a>500G</a>
+                  <a>1000G</a>
+                  <a>1200G</a>
                 </div>
               </div>
               <div className="widget   ">
@@ -497,7 +466,7 @@ export default function ShopProducts() {
                   <div className="recent-post d-flex align-items-center">
                     <div className="media-img">
                       <img
-                        src="/src/assets/img/widget/recent-1.jpg"
+                        src="/img/widget/recent-1.jpg"
                         width="100"
                         height="73"
                         alt="Recent Post Image"
@@ -505,9 +474,9 @@ export default function ShopProducts() {
                     </div>
                     <div className="media-body pl-30">
                       <h4 className="recent-post-title h5 mb-0">
-                        <a href="blog.html">100% organic healthy</a>
+                        <a href="">100% organic healthy</a>
                       </h4>
-                      <a href="#" className="text-theme fs-12">
+                      <a href="" className="text-theme fs-12">
                         January 04, 2022
                       </a>
                     </div>
@@ -515,7 +484,7 @@ export default function ShopProducts() {
                   <div className="recent-post d-flex align-items-center">
                     <div className="media-img">
                       <img
-                        src="/src/assets/img/widget/recent-2.jpg"
+                        src="/img/widget/recent-2.jpg"
                         width="100"
                         height="73"
                         alt="Recent Post Image"
@@ -523,17 +492,15 @@ export default function ShopProducts() {
                     </div>
                     <div className="media-body pl-30">
                       <h4 className="recent-post-title h5 mb-0">
-                        <a href="blog.html">Keep Your Fruits frash</a>
+                        <a>Keep Your Fruits fresh</a>
                       </h4>
-                      <a href="#" className="text-theme fs-12">
-                        March 04, 2022
-                      </a>
+                      <a className="text-theme fs-12">March 04, 2022</a>
                     </div>
                   </div>
                   <div className="recent-post d-flex align-items-center">
                     <div className="media-img">
                       <img
-                        src="/src/assets/img/widget/recent-3.jpg"
+                        src="/img/widget/recent-3.jpg"
                         width="100"
                         height="73"
                         alt="Recent Post Image"
@@ -541,11 +508,9 @@ export default function ShopProducts() {
                     </div>
                     <div className="media-body pl-30">
                       <h4 className="recent-post-title h5 mb-0">
-                        <a href="blog.html">Get natural healthy food</a>
+                        <a>Get natural healthy food</a>
                       </h4>
-                      <a href="#" className="text-theme fs-12">
-                        April 04, 2022
-                      </a>
+                      <a className="text-theme fs-12">April 04, 2022</a>
                     </div>
                   </div>
                 </div>

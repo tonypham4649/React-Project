@@ -3,7 +3,7 @@ export default function BreadCrumb() {
     <div
       className="breadcumb-wrapper breadcumb-layout1 bg-fluid pt-200 pb-200"
       style={{
-        backgroundImage: "url(/src/assets/img/breadcumb/breadcumb-img-1.jpg)",
+        backgroundImage: "url(img/breadcumb/breadcumb-img-1.jpg)",
         backgroundSize: "cover",
         boxShadow: "inset 0 0 0 2000px rgba(0, 0, 0, 0.363)",
       }}

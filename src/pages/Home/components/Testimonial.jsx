@@ -12,10 +12,7 @@ export default function Testimonial() {
         <div className="section-title text-center  wow fadeIn">
           <h2 className="sec-title1 text-white">What Our Customer</h2>
           <h3 className="sec-title2">Saying?</h3>
-          <img
-            src="./src/assets/img/icons/sec-icon-1.png"
-            alt="Section Title Icon"
-          />
+          <img src="img/icons/sec-icon-1.png" alt="Section Title Icon" />
         </div>
         <div className="position-relative  wow fadeIn">
           <div className="row vs-carousel" id="slideBox1" data-carousel>
@@ -39,10 +36,7 @@ export default function Testimonial() {
                   </span>
                   <div className="d-flex align-items-center mb-2 mb-lg-4">
                     <div className="author-img">
-                      <img
-                        src="./src/assets/img/testimonial/author-1.jpg"
-                        alt="Author"
-                      />
+                      <img src="img/testimonial/author-1.jpg" alt="Author" />
                     </div>
                     <div className="ps-4">
                       <h4 className="author-name mb-0 text-white">
@@ -75,10 +69,7 @@ export default function Testimonial() {
                   </span>
                   <div className="d-flex align-items-center mb-2 mb-lg-4">
                     <div className="author-img">
-                      <img
-                        src="./src/assets/img/testimonial/author-2.jpg"
-                        alt="Author"
-                      />
+                      <img src="img/testimonial/author-2.jpg" alt="Author" />
                     </div>
                     <div className="ps-4">
                       <h4 className="author-name mb-0 text-white">
@@ -111,10 +102,7 @@ export default function Testimonial() {
                   </span>
                   <div className="d-flex align-items-center mb-2 mb-lg-4">
                     <div className="author-img">
-                      <img
-                        src="./src/assets/img/testimonial/author-3.jpg"
-                        alt="Author"
-                      />
+                      <img src="img/testimonial/author-3.jpg" alt="Author" />
                     </div>
                     <div className="ps-4">
                       <h4 className="author-name mb-0 text-white">

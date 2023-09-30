@@ -4,7 +4,7 @@ export default function Preloader() {
       <button className="vs-btn preloaderCls">Cancel Preloader </button>
       <div className="preloader-inner">
         <div className="loader-logo">
-          <img src="./src/assets/img/logo.svg" alt="Foodano" />
+          <img src="/img/logo.svg" alt="Foodano" />
         </div>
         <div className="loader-wrap pt-4">
           <span className="loader"></span>

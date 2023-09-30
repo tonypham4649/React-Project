@@ -12,7 +12,7 @@ export default function MainHeader() {
           <div className="col-6">
             <div className="header-logo">
               <Link to="/">
-                <img src="/src/assets/img/logo.svg" alt="Foodano" />
+                <img src="/img/logo.svg" alt="Foodano" />
               </Link>
             </div>
           </div>

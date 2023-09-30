@@ -26,33 +26,33 @@ export default function FeatureLatestProducts() {
         >
           <h2 className="sec-title1">Feature Products</h2>
           <h3 className="sec-title2">Latest Arrivals</h3>
-          <img src="./src/assets/img/icons/sec-icon-1.png" alt="Section Icon" />
+          <img src="img/icons/sec-icon-1.png" alt="Section Icon" />
         </div>
         <div className="filter-menu-style1 filter-menu-active text-center mb-65">
           <button
             className={activeFilter === "all" ? "active" : ""}
-            data-bg-src="./src/assets/img/shape/shape-filter.png"
+            data-bg-src="img/shape/shape-filter.png"
             onClick={() => handleSetFilter("all")}
           >
             <i className="flaticon-salad"></i>Show All
           </button>
           <button
             className={activeFilter === "juice" ? "active" : ""}
-            data-bg-src="./src/assets/img/shape/shape-filter.png"
+            data-bg-src="img/shape/shape-filter.png"
             onClick={() => handleSetFilter("juice")}
           >
             <i className="flaticon-salvsadbox-1"></i>Juice
           </button>
           <button
             className={activeFilter === "fresh" ? "active" : ""}
-            data-bg-src="./src/assets/img/shape/shape-filter.png"
+            data-bg-src="img/shape/shape-filter.png"
             onClick={() => handleSetFilter("fresh")}
           >
             <i className="flaticon-vegetables"></i>Fresh Food
           </button>
           <button
             className={activeFilter === "smoothie" ? "active" : ""}
-            data-bg-src="./src/assets/img/shape/shape-filter.png"
+            data-bg-src="img/shape/shape-filter.png"
             onClick={() => handleSetFilter("smoothie")}
           >
             <i className="flaticon-healthy-food"></i>Smoothie

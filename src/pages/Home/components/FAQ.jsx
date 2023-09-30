@@ -2,7 +2,7 @@ export default function Faq() {
   return (
     <section
       className="vs-faq-wrapper space-top"
-      data-bg-src="./src/assets/img/bg/shop-bg-1.png"
+      data-bg-src="img/bg/shop-bg-1.png"
     >
       <div className="container">
         <div className="row">
@@ -11,10 +11,7 @@ export default function Faq() {
             data-wow-delay="0.3s"
           >
             <div className="banner d-none d-lg-block">
-              <img
-                src="./src/assets/img/shop/shop-banner-1-1.png"
-                alt="Shop Banner"
-              />
+              <img src="img/shop/shop-banner-1-1.png" alt="Shop Banner" />
             </div>
           </div>
           <div
@@ -25,7 +22,7 @@ export default function Faq() {
               <h2 className="sec-title1">Why we are</h2>
               <h3 className="sec-title2">the best</h3>
               <img
-                src="./src/assets/img/icons/sec-icon-1.png"
+                src="img/icons/sec-icon-1.png"
                 alt="Section Title"
                 className="mt-10 mb-20"
               />

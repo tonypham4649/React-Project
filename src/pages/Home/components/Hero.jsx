@@ -10,7 +10,7 @@ export default function Hero() {
         data-slidertype="fullwidth"
         style={{
           height: "850px",
-          backgroundImage: "url(/src/assets/img/hero/hero-bg-3-1.jpg)",
+          backgroundImage: "url(/img/hero/hero-bg-3-1.jpg)",
           backgroundSize: "cover",
           boxShadow: "inset 0 0 0 2000px rgba(0, 0, 0, 0.363)",
         }}

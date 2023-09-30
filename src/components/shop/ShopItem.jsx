@@ -37,7 +37,7 @@ export default function ShopItemEle({ id, name, price, imgUrl }) {
             <a href="">
               <i className="fal fa-cart-plus"></i>
             </a>
-            <a href="assets/img/shop/product-1-3.png" className="popup-image">
+            <a href="/img/shop/product-1-3.png" className="popup-image">
               <i className="far fa-search"></i>
             </a>
           </div>
