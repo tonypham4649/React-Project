@@ -1,9 +1,10 @@
 import { Offcanvas, Stack } from "react-bootstrap";
 import { useShoppingCart } from "../../context/ShoppingCartContext";
 import { CartItem } from "./CartItem";
-import ShopItems from "/src/data/dummydata.json";
+import { useData } from "../../context/DataContext";
 
 export function ShoppingCart({ isOpen }) {
+  const data = useData();
   const { closeCart, cartItems } = useShoppingCart();
 
   return (
@@ -19,8 +20,13 @@ export function ShoppingCart({ isOpen }) {
           <div className="ms-auto fw-bold fs-5">
             Total $
             {cartItems.reduce((total, cartItem) => {
-              const item = ShopItems.find((i) => i.id === cartItem.id);
-              return total + (item?.price || 0) * cartItem.quantity;
+              const item = data.find((i) => i._id === cartItem.id);
+
+              return (
+                Math.round(
+                  (total + (item?.price || 0) * cartItem.quantity) * 100
+                ) / 100
+              );
             }, 0)}
           </div>
         </Stack>

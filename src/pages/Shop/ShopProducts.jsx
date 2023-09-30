@@ -1,7 +1,8 @@
 import ShopItemEle from "../../components/shop/ShopItem";
-import ShopItems from "/src/data/dummydata.json";
+import { useData } from "../../context/DataContext";
 
 export default function ShopProducts() {
+  const data = useData();
   return (
     <section className="vs-shop-wrapper position-relative space-top space-md-bottom">
       <div className="container">
@@ -80,13 +81,13 @@ export default function ShopProducts() {
                 aria-labelledby="tab-shop-grid"
               >
                 <div className="row">
-                  {ShopItems.map((item) => (
+                  {data.map((item) => (
                     <ShopItemEle
-                      key={item.id}
-                      id={item.id}
+                      key={item._id}
+                      id={item._id}
                       name={item.name}
                       price={item.price}
-                      imgUrl={item.imgUrl}
+                      imgUrl={item.image}
                     />
                   ))}
                 </div>

@@ -20,7 +20,7 @@ export default function ShopItemEle({ id, name, price, imgUrl }) {
               src={imgUrl}
               alt="Product Image"
               className="w-100"
-              style={{ width: "270px", height: "245px" }}
+              style={{ width: "270px", height: "270px" }}
             />
           </a>
           <a href="shop-details.html">
@@ -28,7 +28,7 @@ export default function ShopItemEle({ id, name, price, imgUrl }) {
               src={imgUrl}
               alt="Product Image"
               className="w-100 img_swap"
-              style={{ width: "270px", height: "245px" }}
+              style={{ width: "270px", height: "270px" }}
             />
           </a>
         </div>
@@ -48,7 +48,10 @@ export default function ShopItemEle({ id, name, price, imgUrl }) {
           </span>
           <div>
             {quantity === 0 ? (
-              <Button onClick={() => increaseCartQuantity(id)}>
+              <Button
+                variant="success"
+                onClick={() => increaseCartQuantity(id)}
+              >
                 Add to card
               </Button>
             ) : (
@@ -61,33 +64,23 @@ export default function ShopItemEle({ id, name, price, imgUrl }) {
                   style={{ gap: "0.5rem" }}
                 >
                   <Button
-                    style={{
-                      borderRadius: "5px",
-                      backgroundColor: "blue",
-                      color: "white",
-                      minWidth: "2rem",
-                    }}
+                    variant="outline-success"
                     onClick={() => decreaseCartQuantity(id)}
                   >
                     -
                   </Button>
                   <div>
-                    <span className="fs-3">{quantity}</span> in cart
+                    <span className="fs-5">{quantity}</span> in cart
                   </div>
                   <Button
-                    style={{
-                      borderRadius: "5px",
-                      backgroundColor: "blue",
-                      color: "white",
-                      minWidth: "2rem",
-                    }}
+                    variant="outline-success"
                     onClick={() => increaseCartQuantity(id)}
                   >
                     +
                   </Button>
                 </div>
                 <Button
-                  style={{ backgroundColor: "red", color: "white" }}
+                  variant="outline-danger"
                   onClick={() => removeFromCart(id)}
                 >
                   Remove

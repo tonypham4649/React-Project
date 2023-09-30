@@ -1,37 +1,40 @@
-import { Button, Stack } from "react-bootstrap";
 import { useShoppingCart } from "../../context/ShoppingCartContext";
-import ShopItems from "/src/data/dummydata.json";
+import { useData } from "../../context/DataContext";
+import { Button, Stack } from "react-bootstrap";
 
 export function CartItem({ id, quantity }) {
+  const data = useData();
+
   const { removeFromCart } = useShoppingCart();
-  const item = ShopItems.find((i) => i.id === id);
+
+  const item = data.find((i) => i._id === id);
   if (item === null) return null;
 
   return (
-    <Stack direction="horizontal" gap={2} className="d-flex align-items-center">
+    <Stack
+      direction="horizontal"
+      gap={2}
+      className="d-flex align-items-center "
+    >
       <img
-        src={item.imgUrl}
-        style={{ width: "125px", height: "75px", objectFit: "cover" }}
+        className="p-2"
+        src={item.image}
+        style={{ width: "125px", height: "100px", objectFit: "contain" }}
       />
-      <div className="me-auto">
+      <div className="p-2 mx-5">
         <div>
           {item.name}{" "}
-          {quantity > 1 && (
-            <span className="text-muted" style={{ fontSize: ".65rem" }}>
-              x{quantity}
-            </span>
+          {quantity > 0 && (
+            <span style={{ fontSize: ".9rem", color: "red" }}>x{quantity}</span>
           )}
         </div>
-        <div className="text-muted" style={{ fontSize: "0.75rem" }}>
-          ${item.price}
-        </div>
-        <div className="text-muted" style={{ fontSize: "0.75rem" }}>
-          ${item.price * quantity}
+        <div className="text-muted" style={{ fontSize: ".9rem" }}>
+          ${Math.round(item.price * quantity * 100) / 100}
         </div>
         <Button
           variant="outline-danger"
           size="sm"
-          onClick={() => removeFromCart(item.id)}
+          onClick={() => removeFromCart(item._id)}
         >
           &times;
         </Button>
