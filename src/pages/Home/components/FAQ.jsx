@@ -27,11 +27,13 @@ export default function Faq() {
                 className="mt-10 mb-20"
               />
               <p className="fst-italic fw-semibold">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna .
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Eveniet provident minima voluptates ea reiciendis? Blanditiis et
+                quo sequi commodi deleniti! Voluptatum voluptates commodi quis
+                tempore non laborum nemo, fugiat maxime.
               </p>
             </div>
-            <div
+            {/* <div
               className="vs-accordion accordion-style1 accordion mb-30"
               id="accordionLayout1"
             >
@@ -119,7 +121,7 @@ export default function Faq() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

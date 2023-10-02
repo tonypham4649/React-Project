@@ -21,6 +21,7 @@ function App() {
   const routeComponents = routes.map(({ path, element }, key) => (
     <Route path={path} element={element} key={key} />
   ));
+
   return (
     <DataProvider value={data}>
       <ShoppingCartProvider>

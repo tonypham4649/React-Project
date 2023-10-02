@@ -435,32 +435,18 @@ export default function ShopProducts() {
                   <li>
                     <input type="checkbox" name="juice" id="juice" />
                     <label htmlFor="juice">Juice</label>
-                    <span>(06)</span>
                   </li>
                   <li>
                     <input type="checkbox" name="Fresh" id="Fresh" />
                     <label htmlFor="Fresh">Fresh</label>
-                    <span>(06)</span>
                   </li>
                   <li>
                     <input type="checkbox" name="Smoothie" id="Smoothie" />
                     <label htmlFor="Smoothie">Smoothie</label>
-                    <span>(06)</span>
                   </li>
                 </ul>
               </div>
-
-              <div className="widget widget_tag_cloud   ">
-                <h3 className="widget_title">Size</h3>
-                <div className="tagcloud">
-                  <a>300G</a>
-                  <a>450G</a>
-                  <a>500G</a>
-                  <a>1000G</a>
-                  <a>1200G</a>
-                </div>
-              </div>
-              <div className="widget   ">
+              <div className="widget">
                 <h3 className="widget_title">Best Seller</h3>
                 <div className="vs-widget-recent-post">
                   <div className="recent-post d-flex align-items-center">
